@@ -20,4 +20,5 @@ Upcoming plans for Shipyard include stats collection.  These will collect respon
 
 Read more on applications [here](https://github.com/ehazlett/shipyard/wiki/Applications) and source is [https://github.com/ehazlett/shipyard](https://github.com/ehazlett/shipyard)
 
+For a screencast showing applications, visit [https://www.youtube.com/watch?v=pLX3QF17Sj0](https://www.youtube.com/watch?v=pLX3QF17Sj0).
 
