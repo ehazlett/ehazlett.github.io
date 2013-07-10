@@ -14,7 +14,7 @@ Using Shipyard, you can launch a set of containers that expose a backend port.  
 ### Deeper Dive
 Under the covers, Shipyard contains the configuration for the application.  Upon attaching a container to the application, Shipyard will queue a task to update the frontend mapping in Redis which Hipache uses.  The configuration will also be updated upon container restart since the port(s) can change.
 
-Upcoming plans for Shipyard include stats collection.  These will collect response times, number of requests, response times, etc. from Hipache for applications.  With this, we can do things like autoscaling.  Lots of stuff planned -- join in :)
+Upcoming plans for Shipyard include stats collection.  These will collect the number of requests, response times, etc. from Hipache for applications.  With this, we can do things like autoscaling.  Lots of stuff planned -- join in :)
 
 ### More
 
