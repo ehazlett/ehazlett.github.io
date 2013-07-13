@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shipyard: Terminal"
+title: "Shipyard: Container Attaching"
 description: "Attaching to containers in the browser"
 category: applications
 tags: ["shipyard", "docker"]
