@@ -58,3 +58,5 @@ Now you can run `bin/docker` and use Shipyard to access the console via websocke
 
 The console support is still in branch (`terminal`) in the Shipyard repository until the
 1146 pull request gets merged and released as stable in Docker.
+
+Here is a quick screencast showing the feature: http://www.youtube.com/watch?v=aLlp-kemx_s
