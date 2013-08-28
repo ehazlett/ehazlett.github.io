@@ -80,6 +80,7 @@ We will now launch a container to send some data.
 In the container run the following:
 
 `echo "*.* @@<DOCKER_HOST_IP>:<LOGSTASH_CONTAINER_PORT>" >> /etc/rsyslog.d/50-default.conf`
+`rsyslogd`
 
 Replace `<DOCKER_HOST_IP>` with the IP of your docker host (i.e. your public
 facing IP, perferably not 127.0.0.1) and `<LOGSTASH_CONTAINER_PORT>` with the port
