@@ -68,7 +68,7 @@ Get the port allocated for Kibana on port 80:
 
 Open a browser to `http://<DOCKER_HOST_IP>:<KIBANA_DOCKER_PORT>`
 
-Should see this:
+You should see this:
 
 ![Kibana3](/assets/images/kibana.png)
 
@@ -93,3 +93,10 @@ You should see it logging now:
 With just a short while playing with the new Kibana and the editor, there is almost
 a limitless possibility of graphs, etc. for logging.  Hopefully this is a quick
 way to test/deploy it yourself.
+
+# Docker Repositories
+
+* ElasticSearch [https://github.com/arcus-io/docker-elasticsearch](https://github.com/arcus-io/docker-elasticsearch)
+* Logstash [https://github.com/arcus-io/docker-logstash](https://github.com/arcus-io/docker-logstash)
+* Kibana [https://github.com/arcus-io/docker-kibana](https://github.com/arcus-io/docker-kibana)
+
