@@ -87,7 +87,7 @@ that was allocated for port 514.
 
 Now still in the container run the following to start rsyslog:
 
-`rsyslogd`
+`rsyslogd -c5`
 
 You should see it logging now:
 
