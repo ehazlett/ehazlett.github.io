@@ -36,6 +36,9 @@ statistics for containers and hosts.  After that will be an API and then "Bluepr
 I will go into detail in another post but a blueprint is essentially a way
 to map and connect containers (dependencies, environment variable injection, etc.)
 
+You can launch the new Shipyard by `docker run ehazlett/shipyard` (make sure to
+`docker pull ehazlett/shipyard` if you already have the image to get the latest).
+
 For more information and updated screenshots source is on [Github](https://github.com/ehazlett/shipyard).
 
 As usual, thanks to the [Docker](http://docker.io) team for kicking so much ass :)
