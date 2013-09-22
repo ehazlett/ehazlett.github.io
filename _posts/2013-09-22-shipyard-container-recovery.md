@@ -6,7 +6,7 @@ category: applications
 tags: [shipyard, docker]
 ---
 {% include JB/setup %}
-# Shipyard: Container Recovery
+
 Continuing our push towards production grade Docker management, the latest feature released is container recovery.  This allows a container to be marked as "protected" and Shipyard will start monitoring it for failures.  Enabling recovery is as simple as a toggle in the container details.  Here is how it works.
 
 Shipyard uses a queue for background tasks.  With container recovery, a scheduled task runs on a specified interval that monitors the protected containers.  On a side note, we originally used the Python RQ library for tasks but we ran into issues with scheduled tasks and the RQ scheduler.   We decided to switch to Celery but still keep the same Redis backend.  If a protected container exits, stops, is destroyed, etc. Shipyard will launch a new container using the exact same parameters.  It does this by using the cached copy of the container metadata.  To prevent recovery loops, there is a check to see how many times a container has recovered.  If this passes the specified setting, an exception is raised and Shipyard stops attempting recovery.
