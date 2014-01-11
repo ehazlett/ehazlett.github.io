@@ -17,7 +17,7 @@ Currently there is an open issue [https://github.com/dotcloud/docker/pull/2687](
 Simple Quickstart:
 
 * `docker pull shipyard/private-registry`
-* `docker run -name registry -p 443 -v /path/to/cert.crt:/etc/registry.crt -v /path/to/cert.key:/etc/registry.key shipyard/private-registry`
+* `docker run -name registry -p 443 -v /path/to/cert_and_key:/opt/ssl -e SSL_CERT_PATH=/opt/ssl/cert.crt -e SSL_CERT_KEY_PATH=/opt/ssl/cert.key shipyard/private-registry`
 * `docker port registry 443` (this will show you the mapped port)
 
 The default username is `admin` with a password of `docker`.
